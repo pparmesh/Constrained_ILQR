@@ -5,8 +5,7 @@ Quadratic Regulator (iLQR) algorithm that incorporates con-
 straints in the environment for on-road autonomous motion
 planning. Since iLQR is based on the theory of dynamic
 programming, it does not inherently take constraints like
-obstacles, actuator limits, etc into account. Therefore a Con-
-strained Iterative Linear Quadratic Regulator [1] [2] (CILQR)
+obstacles, actuator limits, etc into account. Therefore a Constrained Iterative Linear Quadratic Regulator [1] [2] (CILQR)
 algorithm is used, which solves constrained optimal control
 problem in nonlinear systems efficiently. The algorithm is then
 deployed in an autonomous driving simulator, which will also
