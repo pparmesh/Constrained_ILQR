@@ -16,7 +16,7 @@ Here are the results in a self-developed Python Simulator <br/>
 Two different behaviors are shown depending on the cost of deviating from the reference
 trajectory and deviating from the desired speed. <br/>
 In this first GIF, there is a high cost for deviating from the reference trajectory and hence the ego-vehicle(in red)
-stay close to the reference path (red line) and does not overtake the NPC vehicle (in green)
+stays close to the reference path (red line) and does not overtake the NPC vehicle (in green)
 ![](https://media.giphy.com/media/S3ar1cwuQ5V59uyt65/giphy.gif) <br/>
 In this second GIF, there is a high cost for deviating from the desired velocity and hence the ego-vehicle( in red)
 deviates from the reference path (red line), maintains its desired speed and overtakes the NPC vehicle (in green)
