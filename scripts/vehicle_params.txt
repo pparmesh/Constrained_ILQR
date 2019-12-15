@@ -1,0 +1,53 @@
+VehiclePhysicsControl(
+# x=Engine RPM, y=Torque(Nm)
+torque_curve=[Vector2D(x=0.000000, y=400.000000), Vector2D(x=1890.760742, y=500.000000), Vector2D(x=5729.577637, y=400.000000)], 
+
+# The maximum RPM of the vehicle's engine.
+max_rpm=5729.577637, 
+
+# The moment of inertia of the vehicle's engine.
+moi=1, 
+
+# Damping rate when the throttle is maximum.
+damping_rate_full_throttle=0.15, 
+
+# Damping rate when the throttle is zero with clutch engaged.
+damping_rate_zero_throttle_clutch_engaged=2, 
+
+# Damping rate when the throttle is zero with clutch disengaged.
+damping_rate_zero_throttle_clutch_disengaged=0.35, 
+
+# If true, the vehicle will have an automatic transmission.
+use_gear_autobox=True, 
+
+# Switching time between gears.
+gear_switch_time=0.5, 
+
+# The clutch strength of the vehicle. Measured in Kgm^2/s.
+clutch_strength=10, 
+
+final_ratio=4.000000
+
+forward_gears=forward_gears=[GearPhysicsControl(ratio=4.100000, down_ratio=0.500000, up_ratio=0.650000), GearPhysicsControl(ratio=2.300000, down_ratio=0.500000, up_ratio=0.650000), GearPhysicsControl(ratio=1.600000, down_ratio=0.500000, up_ratio=0.650000), GearPhysicsControl(ratio=1.200000, down_ratio=0.500000, up_ratio=0.650000), GearPhysicsControl(ratio=1.000000, down_ratio=0.500000, up_ratio=0.650000)]
+
+# Vehicle Mass
+mass=1500.000000, 
+
+# Drag coefficient of the vehicle's chassis.
+drag_coefficient=0.3, 
+
+# The center of mass of the vehicle.
+center_of_mass=Location(x=0.600000, y=0.000000, z=-0.250000),
+
+# Curve that indicates the maximum steering for a specific forward speed. 
+steering_curve=[Vector2D(x=0.000000, y=1.000000), Vector2D(x=20.000000, y=0.900000), Vector2D(x=60.000000, y=0.800000), Vector2D(x=120.000000, y=0.700000)], 
+
+# 0 - front left wheel, 1 - front right wheel, 2 - back left wheel, 3 - back right wheel
+wheels=[
+WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=74.999992, radius=36.000000, max_brake_torque=1500.000000, max_handbrake_torque=0.000000, position=Vector3D(x=38168.820312, y=-120.127327, z=122.735214)), 
+WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=74.999992, radius=36.000000, max_brake_torque=1500.000000, max_handbrake_torque=0.000000, position=Vector3D(x=38168.820312, y=-319.703613, z=122.735237)), 
+WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=0.000000, radius=36.000000, max_brake_torque=1500.000000, max_handbrake_torque=3000.000000, position=Vector3D(x=38462.304688, y=-120.127213, z=122.735214)), 
+WheelPhysicsControl(tire_friction=3.500000, damping_rate=0.250000, max_steer_angle=0.000000, radius=36.000000, max_brake_torque=1500.000000, max_handbrake_torque=3000.000000, position=Vector3D(x=38462.304688, y=-319.703522, z=122.735237))
+]
+)
+
