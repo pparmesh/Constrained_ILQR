@@ -1,3 +1,3 @@
 # CILQR
-Implements a Constrained Iterative LQR controller for an Autonomous Vehicle.
+Implements a Constrained Iterative LQR controller for an Autonomous Vehicle.<br/>
 Here are the results in a self-developed Python Simulator
