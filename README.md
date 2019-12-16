@@ -1,8 +1,7 @@
 # CILQR
 Implements a Constrained Iterative LQR controller for an Autonomous Vehicle.<br/>
 Implemented an iterative Linear
-Quadratic Regulator (iLQR) algorithm that incorporates con-
-straints in the environment for on-road autonomous motion
+Quadratic Regulator (iLQR) algorithm that incorporates constraints in the environment for on-road autonomous motion
 planning. Since iLQR is based on the theory of dynamic
 programming, it does not inherently take constraints like
 obstacles, actuator limits, etc into account. Therefore a Constrained Iterative Linear Quadratic Regulator [1] [2] (CILQR)
