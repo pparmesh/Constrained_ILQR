@@ -27,3 +27,5 @@ pages 1–7. IEEE, 2017.
 2. Jianyu Chen, Wei Zhan, and Masayoshi Tomizuka. Autonomous driving
 motion planning with constrained iterative lqr. IEEE Transactions on
 Intelligent Vehicles, 4(2):244–254, 2019. <br/>
+
+Contributors: Prateek Parmeshwar, Karmesh Yadav
